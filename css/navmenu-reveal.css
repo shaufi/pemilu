@@ -1,17 +1,26 @@
 html, body {
   height: 100%;
-  background-color:blue;
 }
 
-.nav-navmenu-nav{
+img{
+  width: auto;
+  height: auto;
+  opacity: 0.2;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
-.navmenu-brand{
-
-  background-color: transparent;
-  color: blue;
+.nav > navmenu-nav li:hover> a{
+  color:blue;
 }
 
+
+.navmenu-brand:hover{
+ color:blue;
+}
+
+#nav navmenu-menu{
+  color:blue;
+}
 
 .navbar-toggle {
   float: left;
