@@ -39,7 +39,7 @@
 			<h1>Nyok Nyoblos</h1>
 		</div>
 		<p class="lead">Tunggu apalagi, yuk nyoblos!</p>
-    <image src="G:\pemilu-master\pemilu-master\image\20150804_040231_infografis tahapan pilkada 2015.png">
+    <image src="http://www.rumahpemilu.com/spaw/uploads/images/article/thumb/20150804_040231_infografis%20tahapan%20pilkada%202015.png">
 	</div>
 
 
