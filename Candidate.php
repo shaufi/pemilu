@@ -29,45 +29,11 @@
   </head>
 
   <body>
-    <div class="navmenu navmenu-default navmenu-fixed-left">
-      <a class="navmenu-brand" href="Dashboard.html">Beranda</a>
-      <ul class="nav navmenu-nav">
-        <li><a href="Candidate.html">Candidate</a></li>
-        <li><a href="Faqs.html">Faqs</a></li>
-        <li><a href="Partai.html">Partai</a></li>
-        <li><a href="Berita.html">Berita</a></li>
-      <ul class="nav navmenu-nav">
-        <li><a href="Event.html">Event</a></li>
-        <li><a href="Sengketa.html">Sengketa</a></li>
-        <li><a href="Anggaran.html">Anggaran</a></li>
-        <li class="dropdown">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown">Tambahan <b class="caret"></b></a>
-          <ul class="dropdown-menu navmenu-nav">
+  <?php
+  include('template/Header.php');
+  include('template/Sidebar.php');
+  ?>
 
-            <li><a href="">Candidate Surabaya</a></li>
-            
-            <li><a href="">DPT Surabaya</a></li>
-            
-            <li><a href="">Partisipasi Pemilih Surabaya</a></li>
-            <li class="divider">
-            <li><a href="">Berita PILKADA Surabaya</a></li>
-            
-            <li><a href="">Kuis Pengetahuan Pilkada</a></li>
-            </li>
-          </ul>
-        <li><a href="About.html">Abouts</a></li>
-        </li>
-      </ul>
-    </div>
-
-    <div class="canvas">
-      <div class="navbar navbar-default navbar-fixed-top">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
 	  <div class="container">
         <div class="page-header">
 			<h1>Nyok Nyoblos</h1>
