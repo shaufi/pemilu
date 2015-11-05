@@ -5,7 +5,6 @@
         <li><a href="Faqs.php">Faqs</a></li>
         <li><a href="Partai.php">Partai</a></li>
         <li><a href="Berita.php">Berita</a></li>
-      <ul class="nav navmenu-nav">
         <li><a href="Event.php">Event</a></li>
         <li><a href="Sengketa.php">Sengketa</a></li>
         <li><a href="Anggaran.php">Anggaran</a></li>
@@ -24,8 +23,12 @@
             <li><a href="">Kuis Pengetahuan Pilkada</a></li>
             </li>
           </ul>
-        <li><a href="About.php">Abouts</a></li>
+
+
         </li>
+        <li><a href="About.php">Abouts</a></li>
+
+        <li><a href="Login.php">Login</a></li>
       </ul>
     </div>
 
