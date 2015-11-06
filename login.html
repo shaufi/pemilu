@@ -69,30 +69,25 @@
             }
             function cek_input(){
                 var np = document.getElementById("i_u");
-                var ks = document.getElementById("i_p");
                 //validasi username
                 if(np.value.length <= 3)
                     np.style.border = "1px solid #F5CB21";
                     
                 else if(np.value.length > 3)
                     np.style.border = "1px solid #1FAA21";
-                //validasi username
-                if(ks.value.length <= 6){
-                    ks.style.border = "1px solid #F53946";
-                }
-                else if(ks.value.length > 6){
-                    ks.style.border = "1px solid #F5CB21";
-                    var upper = /[A-Z].+$/,
-                        lower = /[a-z].+$/,
-                        number = /[0-9].+$/,
-                        special = /[!#$%&].+$/;
-                    if(upper.test(ks.value) &&
-                       lower.test(ks.value) &&
-                       number.test(ks.value) &&
-                       special.test(ks.value)
-                      )
-                    document.getElementById('i_p').style.border = "1px solid white";                }
             }
+            function validatePassword() {
+                var Password = document.getElementById('i_p').value;
+                var minNumberofChars = 6;
+                var maxNumberofChars = 16;
+                var special  = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+                if(Password.length < minNumberofChars
+                   || Password.length > maxNumberofChars){
+                    document.getElementById("i_p").style.border = "1px solid red";
+                }else if(special.test(Password)) {
+                    document.getElementById("i_p").style.border = "1px solid white";
+                }
+}
         </script>
     </head>
     <body>
@@ -106,7 +101,7 @@
                     </tr>
                     <tr>
                         <td><span>PASSWORD</span></td>
-                        <td><input onkeyup="cek_input()" type="password" name="user_pass" id="i_p"/></td>
+                        <td><input onkeyup="validatePassword()" type="password" name="user_pass" id="i_p"/></td>
                     </tr>
                     <tr>
                         <td><a>Lupa Password</a></td>
